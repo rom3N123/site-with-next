@@ -1,0 +1,46 @@
+.build {
+    background-image: url("../../images/background_image1.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+    /*картинка на фоне не размножается */
+    background-position: center;
+    /*Располодение фоновой картинки по центру*/
+    background-size: cover;
+    /*Растягивание картинки или её сужение*/
+    display: flex;
+    margin-bottom: 100px
+}
+
+.build__post {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.build__text {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+
+
+@media (max-width:800px) {
+    .build {
+        margin-bottom: 40px;
+        min-height: 350px;
+    }
+
+    .build__text {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:370px) {
+
+    .build__text {
+        font-size: 1em;
+    }
+}

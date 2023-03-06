@@ -1,0 +1,35 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.line {
+    padding: 0;
+    width: 100%;
+    border: 1px solid #000;
+    transition: all .2s;
+    background-color: black;
+}
+
+.burgerActive .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burgerActive .line:first-child {
+    transform: rotate(45deg) translate(7px, 6px);
+}
+
+.burgerActive .line:last-child {
+    transform: rotate(135deg) translate(-5px, 4px);
+}
+
+@media (min-width: 1001px) {
+    .burger {
+        display: none;
+    }
+}

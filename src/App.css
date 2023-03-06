@@ -1,0 +1,124 @@
+:root {
+    --swiper-pagination-bullet-size: 30px;
+    --swiper-theme-color: #C0C0C0;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-bullet-horizontal-gap: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+}
+
+button {
+    background: none;
+    border: 0;
+    outline: 0;
+
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+.section__active {
+    overflow: hidden;
+}
+.background {
+    background-image: url("images/background_image2.svg");
+    min-height: 700px;
+    background-repeat: no-repeat;
+    /*картинка на фоне не размножается */
+    background-position: center;
+    /*Располодение фоновой картинки по центру*/
+    background-size: cover;
+    /*Растягивание картинки или её сужение*/
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+a {
+    font-size: 1em;
+    color: black;
+
+}
+
+a:hover {
+    color: blue;
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    font-size: 3em;
+    color: black;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: black;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: auto;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+.swiper-wrapper {
+    margin-bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    h5 {
+        font-size: 0.6em;
+    }
+
+    h4 {
+        font-size: 0.7em;
+
+    }
+
+    h6 {
+        font-size: 0.6em;
+    }
+}

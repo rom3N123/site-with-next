@@ -1,0 +1,49 @@
+.panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateX(101%);
+    transition: all .3s;
+}
+
+.panelActive {
+    transform: translateX(0);
+}
+
+.panel__block {
+    padding-top: 91.5px;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.panel__block__object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 100%;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+.back {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:400px) {
+    .panel {
+        width: 100vw;
+    }
+}

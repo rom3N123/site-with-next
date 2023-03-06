@@ -1,0 +1,10 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav {
+    display: flex;
+    gap: 31px;
+}

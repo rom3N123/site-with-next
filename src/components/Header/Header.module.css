@@ -1,0 +1,15 @@
+.header {
+    margin: 21px 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 1000px) {
+
+    .nav,
+    .header__contacts {
+        display: none;
+    }
+}
