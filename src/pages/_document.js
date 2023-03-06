@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="ru">
       <Head >
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta name="description" content="Строительство домов во Владимирской области" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
         <meta charset="utf-8" />
