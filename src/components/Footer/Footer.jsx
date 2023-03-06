@@ -7,6 +7,7 @@ import TimeIcon from "../../images/time.svg";
 import VkIcon from "../../images/vk.svg";
 import WhatsupIcon from "../../images/whatsup.svg";
 import ViberIcon from "../../images/viber.svg";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -16,9 +17,9 @@ const Footer = () => {
           <h1>Контакты</h1>
         </div>
         <div className={styles.footer__content}>
-          <div className="phone">
+          <div className={styles.phone}>
             <div>
-              <img className="icon" src={PhoneIcon}></img>
+              <Image className={styles.icon} src={PhoneIcon} alt="Телефон" />
             </div>
             <div className={styles.phone__number}>
               <Link href="tel:+79621620835" text="+7(962)162-08-35" />
@@ -28,13 +29,13 @@ const Footer = () => {
           <div className={styles.mail}>
             <Link
               href="mailto:lutenkov33@gmail.com"
-              icon={<img className="icon" src={MailIcon} />}
+              icon={<Image className={styles.icon} src={MailIcon} alt="Почта" />}
               text="lutenkov33@gmail.com"
             />
           </div>
           <div className={styles.timetable}>
             <div>
-              <img className="icon" src={TimeIcon}></img>
+              <Image className="icon" src={TimeIcon} alt="Время работы" />
             </div>
             <div>
               <h2>
@@ -50,7 +51,7 @@ const Footer = () => {
                 href="https://vk.com/id258043383"
                 className={styles.link__icon}
               >
-                <img className={styles.icon} src={VkIcon}></img>
+                <Image className={styles.icon} src={VkIcon} alt="Вконтакте" />
               </a>
             </div>
             <div>
@@ -59,7 +60,7 @@ const Footer = () => {
                 href="whatsapp://send?phone=+79621620835"
                 className={styles.link__icon}
               >
-                <img className={styles.icon} src={WhatsupIcon}></img>
+                <Image className={styles.icon} src={WhatsupIcon} alt="Whatsapp" />
               </a>
             </div>
             <div>
@@ -68,7 +69,7 @@ const Footer = () => {
                 href="viber://chat?number=%2B79621620835"
                 className={styles.link__icon}
               >
-                <img className={styles.icon} src={ViberIcon}></img>
+                <Image className={styles.icon} src={ViberIcon} alt="Viber" />
               </a>
             </div>
           </div>

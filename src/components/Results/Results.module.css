@@ -1,8 +1,3 @@
-.build__statistics__block {
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: 70px;
-}
 
 .build__statistics {
     display: flex;
@@ -13,9 +8,6 @@
     align-items: center;
 }
 
-.build__heading {
-    margin-bottom: 80px;
-}
 
 .number {
     display: flex;
@@ -34,17 +26,6 @@
     text-align: center;
 }
 
-@media (max-width: 1200px) {
-    .build__statistics__block {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .build__heading {
-        text-align: center;
-    }
-}
 
 @media (max-width: 800px) {
 

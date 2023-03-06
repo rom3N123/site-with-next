@@ -38,7 +38,7 @@ const Gallery = () => {
             slidesPerView={1}
             pagination={{
               clickable: true,
-              renderBullet: function (index, className) {
+              renderBullet: function(index, className) {
                 return (
                   '<span class="' + className + '">' + (index + 1) + "</span>"
                 );
@@ -50,7 +50,7 @@ const Gallery = () => {
               return (
                 <SwiperSlide key={index}>
                   {pageImages.map((src) => {
-                    return <Image src={src} key={src} />;
+                    return <Image src={src} key={src} alt="Изображение галереи" />;
                   })}
                 </SwiperSlide>
               );

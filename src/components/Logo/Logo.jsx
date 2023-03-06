@@ -1,10 +1,12 @@
 import React from "react";
-import { ReactComponent as LogoIcon } from "../../images/logo.svg";
+import logoIcon from "../../images/logo.svg";
 import styles from "./Logo.module.css";
+import Image from 'next/image'
+
 const Logo = () => {
   return (
     <div className={styles.logo}>
-      <LogoIcon />
+      <Image src={logoIcon} alt="Моностройк логотип" />
       <p className={styles.logo__text}>Монострой</p>
     </div>
   );
